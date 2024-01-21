@@ -14,11 +14,11 @@
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 # 调整内核参数
-echo 'net.netfilter.nf_conntrack_max=655350' >> package/base-files/files/etc/sysctl.conf
+echo 'net.netfilter.nf_conntrack_max=65535' >> package/base-files/files/etc/sysctl.conf
 echo 'fs.nr_open = 10000000' >> package/base-files/files/etc/sysctl.conf
 echo 'fs.file-max = 1048576' >> package/base-files/files/etc/sysctl.conf
-echo 'ulimit -u 655350' >> package/base-files/files/etc/profile
-echo 'ulimit -HSn 655350' >> package/base-files/files/etc/profile
+echo 'ulimit -u 65535' >> package/base-files/files/etc/profile
+echo 'ulimit -HSn 65535' >> package/base-files/files/etc/profile
 
 # themes添加（svn co 命令意思：指定版本如https://github）
 #git clone https://github.com/Leo-Jo-My/luci-theme-Butterfly package/luci-theme-Butterfly
