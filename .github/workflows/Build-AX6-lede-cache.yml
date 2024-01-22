@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/weimjsam/lede
+  REPO_URL: https://github.com/weimjsam/openwrt-lede
   REPO_BRANCH: master
   REPO_COMMIT: '201db3cc0285c3980ed565c4ad4f0352a3339d50'
   FEEDS_CONF: feeds.conf.default
