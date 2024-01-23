@@ -22,7 +22,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  REPO_COMMIT: '0609f6dbc48258cfff15be0068f4bbf24ac25994'
+  REPO_COMMIT: 'c3ac3c9350e0ca04daadffdef1cec44247829536'
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/AX6/lede.config
   DIY_P1_SH: diy/ax6-part1-lede.sh
