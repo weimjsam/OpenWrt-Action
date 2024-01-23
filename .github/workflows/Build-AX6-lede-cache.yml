@@ -74,6 +74,7 @@ jobs:
         rm -rf openwrt/package/kernel/mac80211
         cp -rf $GITHUB_WORKSPACE/general/xiaomi/* openwrt/
 
+
     - name: Cache
       uses: klever1988/cachewrtbuild@main
       with:
@@ -181,7 +182,7 @@ jobs:
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
-        echo "## Openwrt 固件说明" >> release.txt
+        echo "## Openwrt dev固件说明" >> release.txt
         echo "IP: 192.168.3.1" >> release.txt
         echo "WEB登陆账户: root" >> release.txt
         echo "密码: password" >> release.txt
