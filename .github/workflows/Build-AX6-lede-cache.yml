@@ -22,7 +22,7 @@ on:
 env:
   REPO_URL: https://github.com/weimjsam/openwrt-lede
   REPO_BRANCH: main
-  REPO_COMMIT: '4244e0534fbb4fca9ec0d0466f608f6748461fa0'
+  REPO_COMMIT: 'cc5b595232855164d5fa2aeacf3112e621f103ab'
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/AX6/lede.config
   DIY_P1_SH: diy/ax6-part1-lede.sh
